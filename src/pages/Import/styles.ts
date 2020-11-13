@@ -52,5 +52,20 @@ export const Footer = styled.section`
     &:hover {
       background: ${shade(0.2, '#ff872c')};
     }
+
+    &:disabled {
+      opacity: 0.4;
+      background: #ccc;
+
+      &:hover {
+        background: #ccc;
+      }
+    }
   }
+`;
+
+export const Error = styled.span`
+  display: block;
+  color: #c53030;
+  margin-top: 8px;
 `;
